@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to right, #681091, #c8bdce);
+    font-family: 'Roboto', sans-serif; 
+}
+
+form {
+    display : flex; /*harus merubah menjadi flex agar bisa menggunakan property flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.text {
+    height: 5vh;
+    width: 60vh; 
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.text::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.submit {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 4vh;
+    background-color: #9A32CD;
+    height: 4vh;
+    border: 2px solid #9A32CD;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #6A0DAD;
+}
+
+header {
+    padding-top: 1.5vh;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    position: relative;
+}
+
+nav a{ 
+    position: relative;
+    display: inline-block;
+    text-decoration: None;
+    color: #ffffff;
+    padding: 10px;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    background: #B57EDC;
+    width: 0px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    
+}
+
+a:hover::after {
+    width : 100%;
+
+}
