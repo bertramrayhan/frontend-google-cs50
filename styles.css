@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(to right, #086d9c, #ffffff);
+    font-family: 'Roboto', sans-serif; 
 }
 
 form {
@@ -10,50 +11,62 @@ form {
     height: 100vh;
 }
 
-input[type='text'] {
+.text {
     height: 5vh;
     width: 60vh; 
     border: 2px solid black;
     border-radius: 7px;
 }
 
-input[type='submit'] {
-    color: rgb(114, 180, 224);
+.text::placeholder {
+    font-family: 'Roboto', sans-serif;
+}
+
+.submit {
+    font-family: 'Roboto', sans-serif;
+    color: white;
     margin-top: 4vh;
-    background-color: black; 
+    background-color: #5bc0de; 
     height: 4vh;
-    border: 2px solid black;
+    border: 2px solid #5bc0de;
     border-radius: 7px;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-input[type='submit']:hover {
-    background-color: rgb(142, 66, 187);
-}
-
-input[type='submit']::placeholder {
-    font-family: 'Roboto';
+.submit:hover {
+    background-color: #31a2c5;
 }
 
 header {
-    text-align: right;
     padding-top: 1.5vh;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    background-color: #89dcf8;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
 }
 
 nav a{ 
-    font-family: 'Roboto';
     position: relative;
     display: inline-block;
     text-decoration: None;
-    color: rgb(48, 95, 117);
+    color: #08415c;
     padding: 10px;
 }
 
 a::after {
     content: '';
     position: absolute;
-    background: rgb(183, 70, 228);
+    background: #5bc0de;
     width: 0px;
     height: 4px;
     bottom: 0;
