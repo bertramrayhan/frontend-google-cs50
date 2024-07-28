@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(to right, #086d9c, #ffffff);
+}
+
 form {
     display : flex; /*harus merubah menjadi flex agar bisa menggunakan property flex*/
     flex-direction: column;
@@ -14,8 +18,9 @@ input[type='text'] {
 }
 
 input[type='submit'] {
+    color: rgb(114, 180, 224);
     margin-top: 4vh;
-    background-color: rgb(185, 71, 252); 
+    background-color: black; 
     height: 4vh;
     border: 2px solid black;
     border-radius: 7px;
@@ -27,16 +32,21 @@ input[type='submit']:hover {
     background-color: rgb(142, 66, 187);
 }
 
+input[type='submit']::placeholder {
+    font-family: 'Roboto';
+}
+
 header {
     text-align: right;
     padding-top: 1.5vh;
 }
 
 nav a{ 
+    font-family: 'Roboto';
     position: relative;
     display: inline-block;
     text-decoration: None;
-    color: black;
+    color: rgb(48, 95, 117);
     padding: 10px;
 }
 
