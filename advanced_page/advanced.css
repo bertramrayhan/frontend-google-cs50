@@ -1,24 +1,38 @@
 body {
-    background: linear-gradient(to right, #681091, #c8bdce);
+    background: linear-gradient(to right, #6dda24, #b16ee0);
     font-family: 'Roboto', sans-serif; 
 }
 
 form {
-    display : flex; /*harus merubah menjadi flex agar bisa menggunakan property flex*/
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
-.text {
+.input_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 200px;
+}
+
+.input_group label {
+    width: 250px;
+    margin-right: 10px; 
+    text-align: right;
+}
+
+
+input[type='text'] {
     height: 5vh;
     width: 60vh; 
     border: 2px solid black;
     border-radius: 7px;
 }
 
-.text::placeholder {
+.input::placeholder {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,15 +40,15 @@ form {
     font-family: 'Roboto', sans-serif;
     color: white;
     margin-top: 4vh;
-    background-color: #9A32CD;
+    background-color: #30df2a;
     height: 4vh;
-    border: 2px solid #9A32CD;
+    border: 2px solid #30df2a;
     border-radius: 7px;
     transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-    background-color: #6A0DAD;
+    background-color: #2ba526;
 }
 
 header {
@@ -49,7 +63,7 @@ nav a{
     position: relative;
     display: inline-block;
     text-decoration: None;
-    color: #ffffff;
+    color: #30df2a;
     padding: 10px;
 }
 

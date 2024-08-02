@@ -13,20 +13,29 @@
             </nav>
         </header>
 
-            <form action="https://www.google.com/search">
-                <div class="input">
-                <input type="text" name="as_q" placeholder="Type here">  
-                <!--ALL THESE WORDS-->
-                <input type="text" name="as_epq" placeholder="Type here">
-                <!--THESE EXACT WORD OR PHRASE-->
-                <input type="text" name="as_oq" placeholder="Type here">
-                <!--ANY OF THESE WORDS-->
-                <input type="text" name="as_eq" placeholder="Type here">
-                <!--NONE OF THESE WORDS-->
-                </div>
-                <input type="submit" value="Google Search" class="submit" >
-                
-            </form>
+        <form action="https://www.google.com/search">
+            <div class="input_group">
+                <label for="as_q">All of the following words:</label>
+                <input type="text" id="as_q" name="as_q" placeholder="Type here">
+            </div>
+        
+            <div class="input_group">
+                <label for="as_epq">These exact words or phrase:</label>
+                <input type="text" id="as_epq" name="as_epq" placeholder="Type here">
+            </div>
+        
+            <div class="input_group">
+                <label for="as_oq">Any of these words:</label>
+                <input type="text" id="as_oq" name="as_oq" placeholder="Type here">
+            </div>
+        
+            <div class="input_group">
+                <label for="as_eq">None of these words:</label>
+                <input type="text" id="as_eq" name="as_eq" placeholder="Type here">
+            </div>
+        
+            <input type="submit" value="Advanced Search" class="submit">
+        </form>
 
     </body>
 </html>
