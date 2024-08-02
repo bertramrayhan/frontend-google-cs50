@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #6dda24, #b16ee0);
+    background: linear-gradient(to right, #4c58ff, #b16ee0);
     font-family: 'Roboto', sans-serif; 
 }
 
@@ -46,15 +46,15 @@ input[type='text'] {
     font-family: 'Roboto', sans-serif;
     color: white;
     margin-top: 4vh;
-    background-color: #30df2a;
+    background-color: blue;
     height: 4vh;
-    border: 2px solid #30df2a;
+    border: 2px solid blue;
     border-radius: 7px;
     transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-    background-color: #2ba526;
+    background-color: rgb(30, 30, 148);
 }
 
 header {
@@ -69,14 +69,14 @@ nav a{
     position: relative;
     display: inline-block;
     text-decoration: None;
-    color: #30df2a;
+    color: blue;
     padding: 10px;
 }
 
 a::after {
     content: '';
     position: absolute;
-    background: #B57EDC;
+    background: rgb(0, 0, 128);
     width: 0px;
     height: 4px;
     bottom: 0;
